@@ -1,0 +1,12 @@
+Home
+Work
+
+
+ scrollTrigger: {
+        trigger: ".para1",
+        scroller: "#box",
+        // markers: true,
+        start: "top 47%",
+        end: "top 46%",
+        scrub: 2,
+    }

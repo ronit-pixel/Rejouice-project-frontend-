@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 2vw;
+}
+
+/* General Styles */
+#box {
+    height: 100%;
+    width: 100%;
+}
+
+/* Page 1 Styles========================================================= */
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.nav {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+.nav nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+
+.heading h1 {
+    height: 40px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    font-size: 24vw;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.headinh h1 span {
+    display: inline-block;
+}
+
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    z-index: 9;
+    position: fixed;
+    display: flex;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page 2 Styles================================================== */
+#page2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.heading2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 3vw 3vw 0 3vw;
+}
+
+.para1 h1 {
+    padding-top: 1vw;
+    font-size: 3.6vw;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 3vw;
+    line-height: 1.07;
+}
+
+/* Page 3 Styles =========================================================*/
+#page3 {
+    height: 100vh;
+    width: 100%;
+}
+
+.button {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button h4 {
+    font-weight: 100;
+    margin-bottom: 1vw;
+}
+
+.button h4 span {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 0.7vw;
+    padding: 4px 6px;
+}
+
+.button h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 1vw;
+}
+
+.page3-elem {
+    margin: 7% 2% 0 2%;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    min-height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+
+.card video {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: all ease-in 0.7s;
+}
+
+.card:hover img {
+    opacity: 0;
+}
+
+/* Page 4 Styles ===============================================================*/
+#page4 {
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+.heading3 {
+    padding: 6% 2% 1% 2%;
+    font-size: 24px;
+}
+
+.heading3 h3 {
+    border-bottom: 1px solid black;
+}
+
+.para2 h1 {
+    padding-top: 1vw;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 3vw;
+    line-height: 1.2;
+}
+
+/* ======================================================= */
+#circle {
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle video {
+    height: 100%;
+}
+
+#cursor2 {
+    background-color: black;
+    color: white;
+    height: 7.5vw;
+    width: 7.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translate(-20%, -20%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#circle h3 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgba(251, 251, 251, 0.653);
+    left: 50%;
+    z-index: 10;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#circle svg {
+    position: absolute;
+    height: 55%;
+    color: hwb(0 91% 7%);
+    z-index: 1;
+}
+
+/* page 5 style =========================================== */
+#page5 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#page5 .heading5 span {
+    font-weight: 200;
+}
+
+.heading5 {
+    margin-left: 2%;
+    border-bottom: 1px solid black;
+}
+
+#page5 p {
+    font-weight: 100;
+    font-size: 3.6vw;
+    text-align: start;
+    line-height: 1.08;
+    padding-left: 3vw;
+    padding-top: 1vw;
+}
+
+/*  page6-================================================================= */
+#page6 {
+    height: 100vh;
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    padding: 2vw 0;
+}
+
+#page6 h3 {
+    font-size: 7vw;
+    width: 95%;
+    margin-left: 2vw;
+    border-bottom: 1px solid black;
+}
+
+#slider-container {
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 20vh;
+}
+
+.slide {
+    box-sizing: border-box;
+    min-width: 40vh;
+    margin-right: 10px;
+}
+
+.slide img {
+    width: 40vh;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    transition: transform 0.5s ease-in-out;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(calc(-100% - 10px))
+    }
+}
+
+/* heading 8=========================== */
+
+#heading8 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heading8 p {
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding-bottom: 1.4vw;
+}
+
+#heading8 h3 {
+    font-size: 5vw;
+    font-weight: 500;
+    border-bottom: 3px solid black;
+    line-height: 8.4vh;
+}
+
+/* page7============================================================================= */
+
+#page7 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.heading9 {
+    margin-left: 2vw;
+}
+
+.heading9 h5 {
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 2vw 0;
+}
+
+.heading9 button {
+    padding: 0.8vw 1vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    background-color: black;
+    border: 2px solid rgba(243, 237, 237, 0.84);
+    color: rgba(242, 237, 237, 0.751);
+}
+
+.heading9 button:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.contact {
+    margin-right: 4vw;
+    margin-top: 5vw;
+    position: absolute;
+    right: 15%;
+}
+
+.contact p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact p:hover {
+    border-bottom: 2px solid rgba(242, 237, 237, 0.751);
+    cursor: pointer;
+}
+
+.link {
+    margin-right: 5vw;
+    margin-top: 2vw;
+}
+
+.link p {
+    font-size: 20px;
+}
+
+.link p:hover {
+    border-bottom: 2px solid rgba(242, 237, 237, 0.751);
+    ;
+    cursor: pointer;
+}
+.rejouice{
+    border-top:  2px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.rejouice h1{
+    height: 40px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.886);
+    top: 20%;
+    text-align: center;
+    font-size: 24vw;
+    line-height: 2;
+    font-weight: 400;
+    text-align: end;
+}
+.rejouice span {
+    display: inline-block;
+}
+
+/* ================================================================================================================================== */
+p1{
+    color:black;
+}
+
